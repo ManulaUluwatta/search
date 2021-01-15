@@ -20,14 +20,12 @@
                 width: 100%;
                 height: 60px;
                 position: relative;
+                margin-top: 0px;
             }
-            .adlbl{
+            #main-topic{
                 color: #d93025;
                 font-size: 20px;
-                margin: 25px 35px;
-            }
-            hr{
-                
+                margin: 25px auto 20px 40px;
             }
             .ads-textInput{    
                 border-radius: 1px;
@@ -37,74 +35,126 @@
                 height: 25px;
                 padding: 1px 8px;
             }
-            .ads-btn{
-                margin-left: 580px;
-            }
-            .col-sm{
-                max-width: 500px;
-            }
-            .form-lable{
-                font-size: 13px;
-            }
-            .row{
-                margin: 10px;
-            }
-            .container{
-                margin-left: 20px;
-            }
             #labelDiv2{
-                margin-left: 380px;
-                color: #7777;
+                color: #777777;
                 font-weight: inherit;
                 font-style: inherit;
             }
+            .desc_lbl{
+                color: #222;
+                font-size: 13px;
+                line-height: 16px;
+                vertical-align: middle;
+            }
+            .hint_lbl{
+                color: #666;
+                font-family: monospace;
+                white-space: pre;
+                font-size: 11px;
+            }
+            div{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .container{
+                margin-left: 30px;
+            }
+            input[class="form-control"]{
+                height: 25px;
+            }
+            button[type="submit"]{
+                float: right;
+                margin-right: 10px;
+            }
+            #imageDiv{
+                background-position: 0 -35px;
+                height: 33px;
+                width: 92px;
+            } 
+            img{
+                height: 31px;
+                margin-left: 15px;
+                margin-top: 7px;
+            }  
+            
         </style>
     </head>
     <body>
         <div class="nav">
-            <span>
-            </span>
+            <div id="imageDiv">
+                <img src="images/google.png">
+            </div>
         </div>
-        <div class="adlbl">
-            <label style="margin-left: 10px;">Advance search</label>
+        <div id="main-topic">
+            <label>Advance search</label>
         </div>
-        <div style="border-bottom: 1px solid #ebebeb"></div>
+        <div style="border-bottom: 1px solid #ebebeb; margin-bottom: 42px;"></div>
         <div>
             <form action="https://google.com/search">
+                <!-- Main Container -->
                 <div class="container">
+                    <!-- Raw One -->
                     <div class="row">
-                        <div class="col-3" id="lableDiv">
+                        <div class="col-lg-7" id="lableDiv">
                             <label style="font-size: 16px;">Find pages with...</label>
                         </div>
-                        <div class="col-3" id="labelDiv2">
+                        <div class="col-lg-5" id="labelDiv2">
                             <label style="font-size: 13px;">To do this in the search box.</label>
                         </div>
                     </div>
+
+                    <!-- Raw Two -->
                     <div class="row">
-                        <label class="form-lable col-sm-2">all these words:</label>
-                        <div class="col-sm">
-                            <input class="form-control form-control-sm" type="text" name="as_q" placeholder="" aria-label=".form-control-sm example">
+                        <div class="col-lg-2">
+                            <label class="desc_lbl">all these words:</label>
+                        </div>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="text" name="as_q" placeholder="" autocomplete="off">
+                        </div>
+                        <div class="col-lg-5">
+                            <label class="hint_lbl">Type the important words: tri-colour rat terrier</label>
                         </div>
                     </div>
+
+                    <!-- Raw Three -->
                     <div class="row">
-                        <label class="form-lable col-sm-2">this exact word or phrase:</label>        
-                        <div class="col-sm">
-                            <input class="form-control form-control-sm" type="text" name="as_epq" placeholder="" aria-label=".form-control-sm example">
+                        <div class="col-lg-2">
+                            <label class="desc_lbl">this exact word or phrase:</label>        
+                        </div>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="text" name="as_epq" placeholder="" autocomplete="off">
+                        </div>
+                        <div class="col-lg-5">
+                            <label class="hint_lbl">Put exact words in quotes: "rat terrier"</label>
                         </div>
                     </div>
+
+                    <!-- Raw Four -->
                     <div class="row">
-                        <label class="form-lable col-sm-2">any of these words:</label>
-                        <div class="col-sm">
-                            <input class="form-control form-control-sm" type="text" name="as_oq" placeholder="" aria-label=".form-control-sm example">
+                        <div class="col-lg-2">
+                            <label class="desc_lbl">any of these words:</label>
+                        </div>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="text" name="as_oq" placeholder="" autocomplete="off">
+                        </div>
+                        <div class="col-lg-5">
+                            <label class="hint_lbl">Type OR between all the words you want: miniature OR standard</label>
                         </div>
                     </div>
+
+                    <!-- Raw Five -->
                     <div class="row">
-                        <label class="form-lable col-sm-2">none of these words:</label>
-                        <div class="col-sm">
-                            <input class="form-control form-control-sm" type="text" name="as_eq" placeholder="" aria-label=".form-control-sm example">
+                        <div class="col-lg-2">
+                            <label class="desc_lbl">none of these words:</label>
+                        </div>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="text" name="as_eq" placeholder="" autocomplete="off">
+                        </div>
+                        <div class="col-lg-5">
+                            <label class="hint_lbl">Put a minus sign just before words that you don't want:<br> -rodent, -"Jack Russell"</label>
                         </div>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-lg-7">
                         <button type="submit" class="btn btn-primary">Advaced Search</button>
                     </div>
                 </div>
