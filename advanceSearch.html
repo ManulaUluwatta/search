@@ -8,87 +8,29 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+        <!-- link custom css -->
+        <link rel="stylesheet" href="css/advanceSearch.css">
+
         <!-- Title -->
         <title>Advaced Search</title>
-        <style>
-            body{
-                margin: 0;
-                font-family: Arial, sans-serif;
-            }
-            .nav{
-                background-color: #f1f1f1;
-                width: 100%;
-                height: 60px;
-                position: relative;
-                margin-top: 0px;
-            }
-            #main-topic{
-                color: #d93025;
-                font-size: 20px;
-                margin: 25px auto 20px 40px;
-            }
-            .ads-textInput{    
-                border-radius: 1px;
-                border: 1px solid #d9d9d9;
-                border-top: 1px solid #c0c0c0;
-                font-size: 13px;
-                height: 25px;
-                padding: 1px 8px;
-            }
-            #labelDiv2{
-                color: #777777;
-                font-weight: inherit;
-                font-style: inherit;
-            }
-            .desc_lbl{
-                color: #222;
-                font-size: 13px;
-                line-height: 16px;
-                vertical-align: middle;
-            }
-            .hint_lbl{
-                color: #666;
-                font-family: monospace;
-                white-space: pre;
-                font-size: 11px;
-            }
-            div{
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-            .container{
-                margin-left: 30px;
-            }
-            input[class="form-control"]{
-                height: 25px;
-            }
-            button[type="submit"]{
-                float: right;
-                margin-right: 10px;
-            }
-            #imageDiv{
-                background-position: 0 -35px;
-                height: 33px;
-                width: 92px;
-            } 
-            img{
-                height: 31px;
-                margin-left: 15px;
-                margin-top: 7px;
-            }  
-            
-        </style>
     </head>
     <body>
+        <!-- navigation bar -->
         <div class="nav">
+            <!--Image div  -->
             <div id="imageDiv">
                 <img src="images/google.png">
             </div>
         </div>
+
+        <!-- Main topic -->
         <div id="main-topic">
             <label>Advance search</label>
         </div>
+
+        <!-- horizontal bar -->
         <div style="border-bottom: 1px solid #ebebeb; margin-bottom: 42px;"></div>
+        
         <div>
             <form action="https://google.com/search">
                 <!-- Main Container -->
@@ -154,6 +96,8 @@
                             <label class="hint_lbl">Put a minus sign just before words that you don't want:<br> -rodent, -"Jack Russell"</label>
                         </div>
                     </div>
+
+                    <!-- Button -->
                     <div class="col-lg-7">
                         <button type="submit" class="btn btn-primary">Advaced Search</button>
                     </div>
