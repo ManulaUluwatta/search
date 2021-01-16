@@ -8,6 +8,24 @@ body{
     height: 60px;
     margin-top: 0px;
 }
+#imageDiv{
+    background-position: 0 -35px;
+    height: 33px;
+    width: 92px;
+} 
+img{
+    height: 31px;
+    margin-left: 15px;
+    margin-top: 7px;
+} 
+.nav a{
+    float: right;
+}
+#btnDiv{
+    margin-left: auto;
+    margin-right: 10px;
+    float: right;
+}
 #main-topic{
     color: #d93025;
     font-size: 20px;
@@ -52,13 +70,4 @@ button[type="submit"]{
     float: right;
     margin-right: 10px;
 }
-#imageDiv{
-    background-position: 0 -35px;
-    height: 33px;
-    width: 92px;
-} 
-img{
-    height: 31px;
-    margin-left: 15px;
-    margin-top: 7px;
-}  
+ 
