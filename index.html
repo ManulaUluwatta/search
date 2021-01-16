@@ -7,56 +7,33 @@
          <!-- boostrap css -->
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
          rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+         
+         <!-- custom css -->
+         <link rel="stylesheet" href="css/style.css">
+
          <!-- Titel of the page -->
-
-         <style>
-             
-             .container input[type="text"]{
-                 border-radius: 25px;
-                 max-width: 400px;
-                 -webkit-tap-highlight-color: transparent;
-                 box-shadow: 1px 1px 1px 1px white;
-                 position: center;
-
-             }
-             img{
-                 padding-top: 107px;
-             }
-        
-            .row{
-    
-            }
-
-            .row a{
-                width: 200px;
-                
-            }
-            .btn.btn-light{
-                width: 200px;
-            }
-           
-            .container{
-                position: relative;
-            }
-
-         </style>
         <title>Google Search</title>
     </head>
     <body>
-        <div>
-            <a href="imageSearch.html">Image Search</a>
-            <a href="advanceSearch.html">Advance Search</a>
+        <div id="header">
+            <div id="linkDiv">
+                <a class="btn btn-light" href="imageSearch.html">Image Search</a>
+                <a class="btn btn-light" href="advanceSearch.html">Advance Search</a>
+            </div>      
         </div>
         <form action="https://google.com/search">
             <div class="container">
-                <div class="imageDiv">
-                    <img src="images/google.png" class="rounded mx-auto d-block" alt="google image">
+                <!-- Image -->
+                <div id="imageDiv">
+                    <img src="images/google.png" class="img-fluid" alt="google image">
                 </div>
-                <div>
-                    <input class="form-control mx-auto d-block form-control-sm" type="text" name="q" placeholder="">
-                </div><div class="row">
-                    <input style="width: 200px; align-content: center;" type="submit" value="Google Search" class="col-6">
-                    <a href="https://www.google.com/doodles/"  class="col-6">I'm feeling lucky</a>
+                <!--   -->
+                <div id="inputDiv">
+                    <input class="form-control" type="text" name="q">
+                </div>
+                <div id="row">
+                    <button type="submit" class="btn btn-light">Google Search</button>
+                    <a href="https://www.google.com/doodles/" class="btn btn-light">I'm Feeling Lucky</a>
                 </div>
             </div>
             
